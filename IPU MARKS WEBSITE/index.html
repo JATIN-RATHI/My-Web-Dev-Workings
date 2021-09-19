@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SHOW MY RESULT - IPU</title>
+    <link rel="stylesheet" href="style.css">
+    <script data-main="findname" src="findResultIPU.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <h1 id="heading">Know your IPU result</h1>
+    <label for="course">Course : </label>
+    <select id="course" name="course" onchange="tellme()">
+        <option value="0">B.TECH</option>
+        <option value="1">BCA</option>
+        <option value="2">BBA</option>
+        <option value="3">USICT B.TECH</option>
+        <option value="4">B.COM(H)</option>
+        <option value="5">B.ED</option>
+        <option value="6">LLB</option>
+        <option value="7">B.A</option>
+        <option value="8">BHMCT</option>
+      </select><br>
+      <label for="batch">Batch &nbsp; : </label>
+      <select id="batch" name="batch">
+          <option value="15">2015 - 2018</option>
+          <option value="16">2016 - 2019</option>
+          <option value="17">2017 - 2020</option>
+          <option value="18">2018 - 2021</option>
+          <option value="19">2019 - 2022</option>
+          <option value="20">2020 - 2023</option>
+        </select><br>
+      <label for="college">College : </label>
+      <select id="college" name="college">
+        <option value="AIT" title="AMBEDKAR INSTITUTE OF TECHNOLOGY">AIT </option>
+        <option value="BITM" title="BLS INSTITUTE OF TECHNOLOGY &amp; MANAGEMENT" >BITM </option>
+        <option value="BMIET" title="BM INSTITUTE OF ENGINEERING &amp; TECHNOLOGY">BMIET </option>
+        <option value="COMM-IT" title="COMM-IT CAREER ACADEMY (MINORITY EDUCATIONAL INSTITUTION)">COMM-IT </option>
+        <option value="CPJCHS" title="CHANDERPRABHU JAIN COLLEGE OF HIGHER STUDIES AND SCHOOL OF LAW">CPJCHS </option>
+        <option value="DTC" title="DELHI TECHNICAL CAMPUS, GREATER NOIDA">DTC </option>
+        <option value="FIMT" title="FAIRFIELD INSTITUTE OF MANAGEMENT &amp; TECHNOLOGY">FIMT </option>
+        <option value="IIT" title="INTEGRATED INSTITUTE OF TECHNOLOGY" >IIT </option>
+        <option value="IITM" title="INSTITUTE OF INFORMATION TECHNOLOGY AND MANAGEMENT">IITM </option>
+        <option value="IITM2" title="INSTITUTE OF INNOVATION IN TECHNOLOGY &amp; MANAGEMENT">IITM2 </option>
+        <option value="JEMTEC" title="JIMS ENGINEERING MANAGEMENT TECHNICAL CAMPUS, GREATER NOIDA">JEMTEC </option>
+        <option value="JIMS" title="JAGAN INSTITUTE OF MANAGEMENT STUDIES, ROHINI">JIMS </option>
+        <option value="JIMS-VK" title="JAGANNATH INTERNATIONAL MANAGEMENT SCHOOL, VASANT KUNJ">JIMS-VK </option>
+        <option value="KCCILHE" title="KCC INSTITUTE OF LEGAL AND HIGHER EDUCATION">KCCILHE </option>
+        <option value="KIHEAT" title="KAMAL INSTITUTE OF HIGHER EDUCATION AND ADVANCED TECHNOLOGY">KIHEAT </option>
+        <option value="KIRAS" title="KALKA INSTITUTE FOR RESEARCH &amp; ADVANCED STUDIES">KIRAS </option>
+        <option value="MSI" title="MAHARAJA SURAJMAL INSTITUTE">MSI </option>
+        <option value="RCIT" title="R C INSTITUTE OF TECHNOLOGY">RCIT </option>
+        <option value="SCCTM" title="SIRIFORT COLLEGE OF COMPUTER TECHNOLOGY &amp; MANAGEMENT">SCCTM </option>
+        <option value="SGIT" title="SGIT SCHOOL OF MANAGEMENT, GHAZIABAD">SGIT </option>
+        <option value="SGTBIMIT" title="SRI GURU TEGH BAHADUR INSTITUTE OF MANAGEMENT AND INFORMATION TECHNOLOGY">SGTBIMIT </option>
+        <option value="TIHE" title="TRINITY INSTITUTE OF HIGHER EDUCATION">TIHE </option>
+        <option value="TIPS" title="TRINITY INSTITUTE OF PROFESSIONAL STUDIES">TIPS </option>
+        <option value="UCE" title="UNITED COLLEGE OF EDUCATION">UCE </option>
+        <option value="VIPS" title="VIVEKANANDA INSTITUTE OF PROFESSIONAL STUDIES">VIPS </option>
+    </select><br>
+    <label for="rollno">Roll No.: </label>
+    <input type="text"><br><br>
+    <button onclick="getResult()">Search <i class="fa fa-search"></i></button>
+</body>
+</html>

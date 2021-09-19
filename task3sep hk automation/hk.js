@@ -43,6 +43,9 @@ browserStartPromise
         let clickonTopicPromise = page.click("div[data-automation=\"algorithms\"");
         return clickonTopicPromise;
     }).then(function () {
+        let waitFor3SecondsPromise = page.waitFor(1000);
+        return waitFor3SecondsPromise;
+    }).then(function () {
         let getToWarmUp =
             waitAndClick("input[value='warmup']", page);
         return getToWarmUp;
